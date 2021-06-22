@@ -1,0 +1,97 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+   --vermelho: red;
+   --preto:purple; 
+}
+
+body {
+ background: var(--preto);
+ font-family: 'Times New Roman', Times, serif;
+ color: white;
+}
+
+header .container {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+}
+
+/*base*/
+
+header .logo {
+    color: yellow;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 38px;
+    margin-left:8px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: rgba(255, 255, 255, 0.753)
+}
+/*filmeprincipal*/
+
+.main-movie {
+    font-size: 16px; 
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50),100%);
+    background-image:url('../img/radioactive2.jpg');
+    height:400px;
+    margin-bottom: 45px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.container { margin-left: 30px}
+
+.main-movie .description{
+   margin-bottom: 40px; 
+   margin-top: 3%;
+   width: 60%;
+}
+
+.main-movie .container {
+    width: 63%;
+}
+
+.title-radioactive {
+    margin-top: 15%; 
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s, ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button i{
+    margin-left: 8px;
+}
+
+.box-film {
+  width: 100%;
+  height: 100%;
+  display: block;  
+}
